@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hero-app/static/css/main.ad5440a8.css",
+    "main.js": "/hero-app/static/js/main.8584db3b.js",
+    "index.html": "/hero-app/index.html",
+    "main.ad5440a8.css.map": "/hero-app/static/css/main.ad5440a8.css.map",
+    "main.8584db3b.js.map": "/hero-app/static/js/main.8584db3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad5440a8.css",
+    "static/js/main.8584db3b.js"
+  ]
+}

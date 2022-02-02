@@ -1,7 +1,8 @@
-import { useContext, useReducer } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../auth/authContext";
-import { types } from "../types/types";
+import { useContext } from "react/cjs/react.development";
+import { AuthContext } from "../../auth/authContext";
+import { types } from "../../types/types";
+
 
 const LoginScreen = () => {
 
@@ -10,13 +11,16 @@ const LoginScreen = () => {
 
 
   const handleLogin = () => {
+
       const action = {
-          type: types.login,
-          payload: {name: "Guido"}
-      }
+        type: types.login,
+        payload: {name: "Guido"},
+      };
+
       dispatch(action);
 
-      navigate("/marvel", {
+      const lastPath = localStorage.getItem("lastPath") || "/";
+      navigate(lastPath, {
         replace: true
       });
   };
